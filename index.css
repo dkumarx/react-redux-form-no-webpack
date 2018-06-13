@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h4{
+  margin-left: 15px;
+  font-weight: bold
+}
+.pageTitle{
+  padding-bottom: 30px;
+  text-align: center
+}
+
+.inviteButton{
+  margin-top: 30px;
+  line-height: 46px
+}
+
+button{
+  min-width: 200px;
+}
+/* FLEX */
+.flex-row {
+  -webkit-box-orient: horizontal!important;
+  -webkit-box-direction: normal!important;
+  -webkit-flex-direction: row!important;
+  -ms-flex-direction: row!important;
+  flex-direction: row!important;
+}
+.d-flex {
+  display: -webkit-box!important;
+  display: -webkit-flex!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+.nav-tabs--vertical {
+  border-bottom: none;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* NAV LINK */
+
+.nav-link {
+  display: block;
+  padding: .5em 1em;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-right-radius: .25rem;
+  border-top-left-radius: .25rem;
+}
+.nav-tabs--left {
+  margin: 0 15px;
+}
+
+.nav-tabs--left .nav-link {
+  transition: border-color .125s ease-in;
+  white-space: nowrap;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #464a4c;
+  background-color: #fff;
+  border-color: #ddd #ddd #fff;
+}
+.nav-tabs--left .nav-link.active {
+  border-bottom-color: #ddd;
+  border-right-color: #fff;
+  border-bottom-left-radius: 0.25rem;
+  border-top-right-radius: 0;
+  margin-right: -1px;
+}
+.nav-tabs .nav-link.disabled {
+  color: #636c72;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* FORMS */
+.form-outer-wrapper{
+  width: 65%;
+}
+
+.buttonContainer{
+  margin-left: 50px
+}
+
+.homePage .contentArea p, .SuccessPage .contentArea p {
+  text-align: center
+}

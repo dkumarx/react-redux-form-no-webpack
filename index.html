@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>React/Redux/Redux-form based form Applicaiton (NO npm/webpack)</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- Stylesheet/Bootstrap@4.0-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+     <!-- End of Stylesheet/Bootstrap@4.0-->
+    <div id="root"></div>
+
+    <!-- For PROD -->
+      <script src="./js-libs/prod/react.js"></script>         <!-- React@15.6.1     -->
+      <script src="./js-libs/prod/react-dom.js"></script>     <!-- REact-dom@15.6.1 -->
+      <script src="./js-libs/prod/react-redux.js"></script>   <!-- React-Redux@5.0.6-->
+      <script src="./js-libs/prod/redux.js"></script>         <!-- Redux@3.7.2      -->
+      <script src="./js-libs/prod/redux-form.js"></script>    <!-- Redux-form@7.0.4 -->
+      <script src="./js-libs/prod/babel.js"></script>         <!-- Babel@16.0.1     -->
+    <!-- /For PROD -->
+    <!-- For NON-PROD -->
+      <!-- <script src="./js-libs/non-prod/react.js"></script>
+      <script src="./js-libs/non-prod/react-dom.js"></script>
+      <script src="./js-libs/non-prod/react-redux.js"></script>
+      <script src="./js-libs/non-prod/redux.js"></script>
+      <script src="./js-libs/non-prod/redux-form.js"></script> 
+      <script src="./js-libs/prod/babel.js"></script>-->
+    <!-- /For NON-PROD -->
+
+    <!-- COMPONENTS -->
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="components/tabs.jsx"></script>
+    
+    <!-- Can't combine both es2015-native-modules-and-generators and es2015 because it will run the regenerator transform. -->
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="store.jsx"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="submitFromApplication.jsx"></script>
+    <!-- VAlidation/Render-->
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="forms/renderField.jsx"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="forms/validate.jsx"></script>
+    <!-- FORMS -->
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="forms/DetailsFormPage.jsx"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="./forms/ClientFormPage.jsx"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="./forms/SchoolFormPage.jsx"></script>
+    
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="./forms/WizardForm.jsx"></script>
+
+    <script data-plugins="transform-es2015-modules-umd" type="text/jsx" src="index.jsx"></script>
+
+  </body>
+</html>
